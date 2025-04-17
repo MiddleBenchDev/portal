@@ -2,14 +2,14 @@ import React from 'react';
 import '../styles/jobList.css';
 import JobCard from './jobCard';
 
-function JobList({ jobs, onJobSelect }) {
+function JobList({ jobs, onJobSelect, selectedOption, setSelectedOption }) {
     return (
         <div className="job-list">
             <div className="job-list-header">
                 <h2>{jobs.length} Jobs Found</h2>
                 <div className="sort-options">
                     <span>Sort by:</span>
-                    <select>
+                    <select value={selectedOption} onChange={(e) => setSelectedOption(e?.target?.value)} defaultValue={selectedOption}>
                         <option>Relevance</option>
                         <option>Date</option>
                         <option>Salary</option>

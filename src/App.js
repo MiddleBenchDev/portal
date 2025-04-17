@@ -65,6 +65,7 @@ function App() {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedJob, setSelectedJob] = useState(null);
+  const [selectedOption, setSelectedOption] = useState("Relevance")
 
   const handleSearch = (query) => {
     setSearchQuery(query);
@@ -117,7 +118,7 @@ function App() {
           {selectedJob ? (
             <JobDetail job={selectedJob} onBack={() => setSelectedJob(null)} />
           ) : (
-            <JobList jobs={filteredJobs} onJobSelect={handleJobSelect} />
+            <JobList jobs={filteredJobs} onJobSelect={handleJobSelect} setSelectedOption={setSelectedOption} selectedOption={selectedOption} />
           )}
         </div>
       </div>
