@@ -1,0 +1,82 @@
+.sidebar {
+    width: 280px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: fit-content;
+    flex-shrink: 0;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+  }
+  
+  .filter-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  
+  .filter-section h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .filter-section h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .clear-filters {
+    background: none;
+    border: none;
+    color: #2557a7;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .clear-filters:hover {
+    text-decoration: underline;
+  }
+  
+  .checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .checkbox-label, .radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .filter-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .filter-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+    }
+  }

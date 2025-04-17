@@ -1,0 +1,118 @@
+.job-detail {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+  
+  .back-button {
+    background-color: transparent;
+    border: none;
+    color: #2557a7;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+  
+  .back-button:hover {
+    text-decoration: underline;
+  }
+  
+  .job-header {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+  }
+  
+  .job-header .job-title {
+    font-size: 24px;
+    color: #2557a7;
+    margin-bottom: 8px;
+  }
+  
+  .job-header .company-name {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .job-header .job-location,
+  .job-header .job-salary {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .job-header .job-meta {
+    margin-bottom: 0;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+  }
+  
+  .apply-button {
+    background-color: #085ff7;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .apply-button:hover {
+    background-color: #0547c9;
+  }
+  
+  .save-button {
+    background-color: transparent;
+    border: 1px solid #085ff7;
+    color: #085ff7;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .save-button:hover {
+    background-color: #f0f7ff;
+  }
+  
+  .job-description,
+  .job-requirements,
+  .company-info,
+  .similar-jobs {
+    margin-bottom: 25px;
+  }
+  
+  .job-description h3,
+  .job-requirements h3,
+  .company-info h3,
+  .similar-jobs h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .job-description p,
+  .company-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+  }
+  
+  .job-requirements ul {
+    list-style-position: inside;
+    margin-left: 20px;
+  }
+  
+  .job-requirements li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 8px;
+  }
